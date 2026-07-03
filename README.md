@@ -52,10 +52,10 @@ aws-security-rag-assistant/
    pip install -r requirements.txt
    ```
 
-3. Copy `.env.example` to `.env` and add your OpenAI key:
-   ```bash
-   cp .env.example .env
-   ```
+3. create `.env` and add your own keys:
+
+   - Get an OpenAI key at https://platform.openai.com
+   - file path "\\aws_security_pillar.pdf"
 
 4. Download the AWS Well-Architected Security Pillar whitepaper PDF from:
    https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html

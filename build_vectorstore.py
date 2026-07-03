@@ -15,7 +15,7 @@ just reconnects to this saved database, it does NOT re-embed anything.
 
 import time
 from dotenv import load_dotenv
-
+import os
 # Load OPENAI_API_KEY (and any other secrets) from .env into the environment.
 # Must run before any OpenAI client/embeddings object is created.
 load_dotenv()
@@ -26,7 +26,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 
 # Path to the source PDF. Change this if you use a different document.
-pdf_path = "aws_security_pillar.pdf"
+pdf_path=os.environ.get("DOCUMENT")
 
 # ---------------------------------------------------------------------------
 # STEP 1: Load the PDF
